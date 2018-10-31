@@ -12,11 +12,8 @@ class Anagram
     list.each do |list_word|
       match_array = list_word.split("")
       class_word = @word.split("")
-      binding.pry
-      match_array.each do |letters|
-        if letters.sort == class_word.sort
-          matches << list_word
-        end
+      if match_array.sort == class_word.sort
+        matches << list_word
       end
     end
     matches
