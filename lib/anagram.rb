@@ -11,7 +11,7 @@ class Anagram
     matches = []
     list.each do |list_word|
       match_array = list_word.split("")
-      class_word = @word.split
+      class_word = @word.split("")
       binding.pry
       match_array.each do |letters|
         if letters.sort == class_word.sort
